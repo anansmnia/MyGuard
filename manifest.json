@@ -1,0 +1,22 @@
+{
+    "name": "MyGuard",
+    "version": "1.0.0",
+    "description": "Check the safety of a website before you browse, by entering its URL.",
+    "manifest_version": 3,
+    "author": "Anan Smnia",
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+      ],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "MyGuard"
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+}
